@@ -2,22 +2,6 @@
     margin: 0;
     padding: 0;
 }
-nav ul{
-    display: flex;
-    justify-content: space-around;
-    padding: 25px;
-    background-color: black;
-    width: 100vw;
-    color:white ;
-    
-}
-nav ul li a{
-    text-decoration: none;
-    color: white;
-}
-nav ul li{
-    list-style: none;
-}
 
 .producto {
   width:30vw;
@@ -28,18 +12,11 @@ nav ul li{
   text-align: center;
 
 }
+
 .producto img{
     width: 80%;
 }
 
-
-.contenedor{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    background-color: rgba(255, 255, 255,0.5);
-    padding: 20px;
-}
 
 .tachado{
     text-decoration: line-through;
@@ -192,3 +169,5 @@ body {
 .form-group button:hover {
     background-color: #0056b3;
 }
+
+
