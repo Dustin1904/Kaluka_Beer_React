@@ -1,5 +1,4 @@
 import React from "react";
-import encabezado from "./Encabezado";
 
 function P_SNosotros(){
     return(
