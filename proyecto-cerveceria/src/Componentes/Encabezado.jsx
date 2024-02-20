@@ -12,7 +12,7 @@ function encabezado(){
             <div className="contenedor_opciones">
               <nav className="navegacion">
                 <li><Link to="/pagina_principal"> Inicio </Link></li>
-                <li><Link to="/pagina_productos"> Productos </Link></li>
+                <li><Link to="/dustin"> Productos </Link></li>
                 <li><Link to="/pagina_ofertas"> Ofertas </Link></li>
                 <li><Link to="/pagina_snosotros"> Sobre Nosotros </Link></li>
                 <li><Link to=""> Iniciar Sesion </Link></li>

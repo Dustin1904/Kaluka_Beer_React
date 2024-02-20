@@ -1,9 +1,11 @@
 import React from "react";
 
+import ReactDOM  from "react";
+
 function P_Productos(){
     return(
       <div className="contenedor_productos">
-        <h1>hola xd</h1>
+        <h2>La estefania es amargada</h2>
       </div>
     );
 }

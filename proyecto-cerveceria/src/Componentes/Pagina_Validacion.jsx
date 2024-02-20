@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
-import Pagina_Principal from './Pagina_Principal';
 import Redirect from 'react';
 import { Route, Router, Routes } from 'react-router-dom';
 import { BrowserRouter } from 'react-router-dom';
-import P_Productos from "./Pagina_Productos";
 import Encabezado from './Encabezado';
 import P_Principal from './Pagina_Principal';
 import P_Ofertas from './Pagina_Ofertas';
 import P_SNosotros from './Pagina_SNosotros';
+import P_Productos from './Pagina_Productos';
+import Productos from './Dustin';
+
+
 
 function P_Validacion(){
   const [redigir, setRedirigir] = useState(false);
@@ -22,7 +24,7 @@ function P_Validacion(){
         </div>
         <Routes>
           <Route path='/Pagina_Principal' element={<P_Principal />} />
-          <Route path='/Pagina_Productos' element={<P_Productos />} />
+          <Route path='/Dustin' element={<Productos/>} />
           <Route path='/Pagina_Ofertas' element={<P_Ofertas />} />
           <Route path='/Pagina_SNosotros' element={<P_SNosotros />} />
         </Routes>
