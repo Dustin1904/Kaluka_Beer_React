@@ -29,9 +29,9 @@
 }
 
 
-/* .tachado{
+.tachadoO{
     text-decoration: line-through;
-} */
+}
 
 .precio{
     margin-left: 10px;
@@ -86,18 +86,19 @@
 .datosProducto>*{
     margin-top: 10px;
     margin-bottom: 10px;
+    padding: 5px;
 }
 .transicion{
     transition: 1s;
 }
-/* .oferta{
+.oferta{
     margin-left: 10px;
     border-radius: 20px;
     background-color: red;
     color: white;
     padding: 5px;
     border-style: none;
-} */
+} 
 .tamaños>*{
     padding: 5px;
     border-radius: 7px;
