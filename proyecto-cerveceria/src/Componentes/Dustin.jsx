@@ -5,27 +5,27 @@ import '../css/productos_styles.css'
 const data = {
     3: {
         id: 3,
-        titulo: 'Hs camiseta Once Caldas Oficial Pro Elites - Patrocinadores',
-        precioNormal: '$60,53',
+        titulo: 'Rubia ',
+        precioNormal: '$10,53',
         url1: producto3,
         url2: '../rss/1espaldablanca.webp',
-        precioOferta: '$42,37'
+        /*precioOferta: '$42,37'*/
     },
     2: {
         id: 2,
-        titulo: 'Hs Uniforme Visitante Deportivo Cali ACADEMIA',
-        precioNormal: '$37,34',
+        titulo: 'Maracuya',
+        precioNormal: '$7,34',
         url1: producto3,
         url2: '../rss/2 pantalonetanegrafront.webp',
-        precioOferta: '$26,14'
+        // precioOferta: '$26,14'
     },
     1: {
         id: 1,
-        titulo: 'Hs Uniforme Deportivo Cali ACADEMIA',
-        precioNormal: '$37,34',
+        titulo: 'Negra',
+        precioNormal: '$7,34',
         url1: producto3,
         url2: '../rss/3 PANTALONETAFRONT.webp',
-        precioOferta: '$26,14'
+        //precioOferta: '$26,14'
     },
 };
 
@@ -77,10 +77,10 @@ const Productos = () => {
                                     className="transicion"
                                     id={`imagen${producto.id}`}
                                     src={producto.url1}
-                                    alt="camisa"
+                                    alt="cerveza"
                                 />
                                 <div>
-                                    <h5>{producto.titulo}</h5>
+                                    <h5 className="tituloProducto">{producto.titulo}</h5>
                                     <div>
                                         <span className="tachado">{producto.precioNormal}</span>
                                         <span className="precio">{producto.precioOferta}</span>
@@ -97,32 +97,30 @@ const Productos = () => {
                             id={`imagen${productoSeleccionado.id}`}
                             className="imagenProducto"
                             src={productoSeleccionado.url1}
-                            alt="camisa"
+                            alt="Cerveza"
                         />
                     </div>
                     <div className="columna">
-                        <h1>{productoSeleccionado.titulo}</h1>
-                        <span>-</span>
-                        <h1>Patrocinadores</h1>
-                        <span style={{ marginTop: '30px', marginBottom: '20px' }}>45646</span>
+                        <h1 className='tituloProducto'>{productoSeleccionado.titulo}</h1>
+                        {/* <span></span>
+                        <span style={{ marginTop: '30px', marginBottom: '20px' }}></span> */}
                         <div className="datosProducto">
                             <span className="tachado">{productoSeleccionado.precioNormal}</span>
-                            <span>{productoSeleccionado.precioOferta}<span className="oferta">Oferta</span></span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum harum, cumque, reprehenderit vero aspernatur iure debitis maiores odit pariatur voluptatibus optio. Cumque distinctio enim delectus id, illo blanditiis eos vitae.</p>
+                            {/* <span>{productoSeleccionado.precioOferta}<span className="oferta">Oferta</span></span> */}
+                            <p className='descripcionProducto'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum harum, cumque, reprehenderit vero aspernatur iure debitis maiores odit pariatur voluptatibus optio. Cumque distinctio enim delectus id, illo blanditiis eos vitae.</p>
                             <div>
-                                <p>Talla</p>
-                                <div className="tallas">
-                                    <button>S</button>
-                                    <button>M</button>
-                                    <button>L</button>
-                                    <button>XL</button>
-                                    <button>XXL</button>
-                                    <button>XXXL</button>
+                                <p className='textoTamaño'>Tamaño</p>
+                                <div className="tamaños">
+                                    <button>150ml</button>
+                                    <button>200ml</button>
+                                    <button>300ml</button>
+                                    <button>450ml</button>
+                                    <button>800ml</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <button onClick={() => setMostrarDetalle(false)}>Volver</button>
+                    <button className='botonVolver' onClick={() => setMostrarDetalle(false)}>Volver</button>
                 </div>
             )}
         </div>
