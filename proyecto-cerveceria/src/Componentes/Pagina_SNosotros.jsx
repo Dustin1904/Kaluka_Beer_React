@@ -3,7 +3,8 @@ import React from "react";
 function P_SNosotros(){
     return(
       <div className="contenedor_sobre_nosotros">
-        <h1> hola x3 xd</h1>
+        <h1> KALUKA <span>BEER</span></h1>
+        
       </div>
     );
 }
