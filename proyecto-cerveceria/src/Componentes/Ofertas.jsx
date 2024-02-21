@@ -5,7 +5,7 @@ import '../css/productos_styles.css'
 const data = {
     3: {
         id: 3,
-        titulo: 'Hs camiseta Once Caldas Oficial Pro Elites - Patrocinadores',
+        titulo: 'Rubia',
         precioNormal: '$60,53',
         url1: producto1,
         url2: '../rss/1espaldablanca.webp',
@@ -13,7 +13,7 @@ const data = {
     },
     2: {
         id: 2,
-        titulo: 'Hs Uniforme Visitante Deportivo Cali ACADEMIA',
+        titulo: 'Maracuya',
         precioNormal: '$37,34',
         url1: producto1,
         url2: '../rss/2 pantalonetanegrafront.webp',
@@ -21,7 +21,7 @@ const data = {
     },
     1: {
         id: 1,
-        titulo: 'Hs Uniforme Deportivo Cali ACADEMIA',
+        titulo: 'Negra',
         precioNormal: '$37,34',
         url1: producto1,
         url2: '../rss/3 PANTALONETAFRONT.webp',
