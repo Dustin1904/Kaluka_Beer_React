@@ -6,26 +6,26 @@ const data = {
     3: {
         id: 3,
         titulo: 'Rubia',
-        precioNormal: '$60,53',
+        precioNormal: '$10,53',
         url1: producto1,
         url2: '../rss/1espaldablanca.webp',
-        precioOferta: '$42,37'
+        precioOferta: '$8,37'
     },
     2: {
         id: 2,
         titulo: 'Maracuya',
-        precioNormal: '$37,34',
+        precioNormal: '$7,34',
         url1: producto1,
         url2: '../rss/2 pantalonetanegrafront.webp',
-        precioOferta: '$26,14'
+        precioOferta: '$6,14'
     },
     1: {
         id: 1,
         titulo: 'Negra',
-        precioNormal: '$37,34',
+        precioNormal: '$7,34',
         url1: producto1,
         url2: '../rss/3 PANTALONETAFRONT.webp',
-        precioOferta: '$26,14'
+        precioOferta: '$6,14'
     },
 };
 
