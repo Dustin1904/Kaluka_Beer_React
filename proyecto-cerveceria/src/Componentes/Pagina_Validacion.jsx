@@ -5,7 +5,7 @@ import Encabezado from './Encabezado';
 import P_Principal from './Pagina_Principal';
 import P_SNosotros from './Pagina_SNosotros';
 import Productos from './Pagina_Producto';
-
+import P_Ofertas from './Ofertas';
 
 
 function P_Validacion(){

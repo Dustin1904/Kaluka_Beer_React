@@ -13,7 +13,7 @@ function encabezado(){
               <nav className="navegacion text-9xl">
                 <li className="text-9xl"><Link to="/pagina_principal"> Inicio </Link></li>
                 <li><Link to="/pagina_producto"> Productos </Link></li>
-                <li><Link to="/pagina_ofertas"> Ofertas </Link></li>
+                <li><Link to="/ofertas"> Ofertas </Link></li>
                 <li><Link to="/pagina_snosotros"> Sobre Nosotros </Link></li>
                 <li><Link to=""> Iniciar Sesion </Link></li>
               </nav>
