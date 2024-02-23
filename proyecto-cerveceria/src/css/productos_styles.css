@@ -1,3 +1,8 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 *{
     margin: 0;
     padding: 0;
@@ -79,9 +84,11 @@ nav ul li{
     margin-bottom: 10px;
 }
 .transicion{
-    transition: 1s;
+    border-radius: 20px;
+    height: 300px;
 }
-.oferta{
+
+.oferta{    
     margin-left: 10px;
     border-radius: 20px;
     background-color: red;
@@ -115,7 +122,6 @@ nav ul li{
 .display-none{
     display: none;
 }
-
 .back{
     position: absolute;
     right: 0;
@@ -125,14 +131,12 @@ nav ul li{
     filter: drop-shadow(1px 1px 9px rgb(80, 80, 80));
     color: white;
     margin: 40px;
-
 }
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #fff;
     margin: 0;
     padding: 0;
-    
 }
 
 .form-container {
@@ -154,7 +158,6 @@ body {
     margin-bottom: 5px;
     font-weight: bold;
 }
-
 .form-group input,
 .form-group textarea {
     width: 100%;
@@ -163,23 +166,18 @@ body {
     border: 1px solid #ccc;
     border-radius: 3px;
 }
-
 .form-group textarea {
     resize: vertical;
 }
-
 .form-group-checkbox {
     margin-top: 10px;
 }
-
 .form-group-checkbox label {
     font-weight: normal;
 }
-
 .form-group-checkbox input {
     margin-right: 5px;
 }
-
 .form-group button {
     background-color: #007bff;
     color: #fff;
@@ -188,7 +186,7 @@ body {
     border-radius: 3px;
     cursor: pointer;
 }
-
 .form-group button:hover {
     background-color: #0056b3;
 }
+

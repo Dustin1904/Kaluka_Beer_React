@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
-import Redirect from 'react';
 import { Route, Router, Routes } from 'react-router-dom';
 import { BrowserRouter } from 'react-router-dom';
 import Encabezado from './Encabezado';
 import P_Principal from './Pagina_Principal';
 import P_Ofertas from './Pagina_Ofertas';
 import P_SNosotros from './Pagina_SNosotros';
-import P_Productos from './Pagina_Productos';
-import Productos from './Dustin';
+import Productos from './Pagina_Producto';
 
 
 
@@ -24,7 +22,7 @@ function P_Validacion(){
         </div>
         <Routes>
           <Route path='/Pagina_Principal' element={<P_Principal />} />
-          <Route path='/Dustin' element={<Productos/>} />
+          <Route path='/Pagina_Producto' element={<Productos/>} />
           <Route path='/Pagina_Ofertas' element={<P_Ofertas />} />
           <Route path='/Pagina_SNosotros' element={<P_SNosotros />} />
         </Routes>

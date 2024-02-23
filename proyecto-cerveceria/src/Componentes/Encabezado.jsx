@@ -7,12 +7,12 @@ function encabezado(){
         <div className="Pagina_Principal">
           <div className="Contenedor_Acciones_Menu">
             <div className="Logo_Kaluka">
-              <img className="imagen_logo_pantallas" src={require("../Imagenes/Kaluka_Beer_3.jpg")} />
+              <img className="imagen_logo_pantallas " src={require("../Imagenes/Kaluka_Beer_3.jpg")} />
             </div>
             <div className="contenedor_opciones">
-              <nav className="navegacion">
-                <li><Link to="/pagina_principal"> Inicio </Link></li>
-                <li><Link to="/dustin"> Productos </Link></li>
+              <nav className="navegacion text-9xl">
+                <li className="text-9xl"><Link to="/pagina_principal"> Inicio </Link></li>
+                <li><Link to="/pagina_producto"> Productos </Link></li>
                 <li><Link to="/pagina_ofertas"> Ofertas </Link></li>
                 <li><Link to="/pagina_snosotros"> Sobre Nosotros </Link></li>
                 <li><Link to=""> Iniciar Sesion </Link></li>
