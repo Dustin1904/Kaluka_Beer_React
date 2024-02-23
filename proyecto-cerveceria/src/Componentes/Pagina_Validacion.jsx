@@ -3,7 +3,6 @@ import { Route, Router, Routes } from 'react-router-dom';
 import { BrowserRouter } from 'react-router-dom';
 import Encabezado from './Encabezado';
 import P_Principal from './Pagina_Principal';
-import P_Ofertas from './Pagina_Ofertas';
 import P_SNosotros from './Pagina_SNosotros';
 import Productos from './Pagina_Producto';
 

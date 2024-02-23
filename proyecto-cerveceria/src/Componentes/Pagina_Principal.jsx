@@ -1,7 +1,4 @@
 import React from "react";
-import Encabezado from "./Encabezado";
-import ReactDOM from 'react-dom';
-
 
 function P_Principal(){
     return(

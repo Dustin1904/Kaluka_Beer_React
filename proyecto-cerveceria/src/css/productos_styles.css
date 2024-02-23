@@ -7,22 +7,8 @@
     margin: 0;
     padding: 0;
 }
-nav ul{
-    display: flex;
-    justify-content: space-around;
-    padding: 25px;
-    background-color: black;
-    width: 100vw;
-    color:white ;
-    
-}
-nav ul li a{
-    text-decoration: none;
-    color: white;
-}
-nav ul li{
-    list-style: none;
-}
+
+
 
 .producto {
   width:30vw;
@@ -33,37 +19,50 @@ nav ul li{
   text-align: center;
 
 }
+
+.tituloProducto{
+    font-size: 2em;
+    padding: 5px;
+    color: rgb(152, 152, 23);
+}
+
 .producto img{
-    width: 80%;
+    width: 60%;
+    padding:  12px;
+    border-radius: 20px;
+    box-shadow: 1px 2px 3px 4px  rgba(0,0,0,.4);
 }
 
 
-.contenedor{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    background-color: rgba(255, 255, 255,0.5);
-    padding: 20px;
-}
-
-.tachado{
+.tachadoO{
     text-decoration: line-through;
 }
+
 .precio{
     margin-left: 10px;
+    font-size: 2em;
 }
 
-.contenedorUnico{
+#contenedorUnico{
     background-color: rgb(227, 222, 222);
     display: flex;
-    flex-wrap: wrap;
-    width: 100vw;
+    width: 100%; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+
 .imagenProducto{
-    width: 80%;
+    width:15%;
     height: auto;
-    margin: 20px;
+    margin: auto;
     transition: 1s;
+    display: block;
+    margin-top: 20px;
+    box-shadow: 1px 2px 5px 5px  rgba(0,0,0,.4);
+    border-radius: 10px;
+
 }
 .contenedorUnico .columna1{
     width: 50%;
@@ -71,17 +70,28 @@ nav ul li{
 .columna{
     width: 50%;
     display: flex;
-
     flex-direction: column;
     justify-content: center;
 }
 .datosProducto{
     margin-top: 20px;
     margin-bottom: 20px;
+    font-size: 25px;
+    padding: 1em;
 }
+.descripcionProducto{
+    text-align: justify;
+    font-size: 15px;
+}
+
+.textoTamaño{
+    color: rgb(152, 152, 23);
+}
+
 .datosProducto>*{
     margin-top: 10px;
     margin-bottom: 10px;
+    padding: 5px;
 }
 .transicion{
     border-radius: 20px;
@@ -95,22 +105,21 @@ nav ul li{
     color: white;
     padding: 5px;
     border-style: none;
-}
-.tallas>*{
+} 
+.tamaños>*{
     padding: 5px;
-    border-radius: 25px;
+    border-radius: 7px;
     border: solid black 1px;
     width: 25%;
     background-color: white;
     text-align: center;
     margin: 5px;
 }
-.tallas{
+.tamaños{
     display: flex;
-    flex-wrap: wrap;
-    width: 15vw;
+    width: 15vw; 
 }
-.tallas>*:focus{
+.tamaños>*:focus{
     background-color: rgb(0, 0, 0);
     color: white;
 }
@@ -119,9 +128,13 @@ nav ul li{
     background-color: rgba(255, 255, 255,0.5);
 
 }
-.display-none{
-    display: none;
+
+.botonVolver{
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: rgb(194, 47, 6);
 }
+<<<<<<< HEAD
 .back{
     position: absolute;
     right: 0;
@@ -132,6 +145,9 @@ nav ul li{
     color: white;
     margin: 40px;
 }
+=======
+
+>>>>>>> 7718f8a4823d1d1f5df674375a0fa28d5657be66
 body {
     font-family: Arial, sans-serif;
     background-color: #fff;
@@ -139,16 +155,8 @@ body {
     padding: 0;
 }
 
-.form-container {
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    border-radius: 5px;
-    width: 30%;
-    margin-left: auto;
-    margin-right: auto;
-}
 
+<<<<<<< HEAD
 .form-group {
     margin-bottom: 15px;
 }
@@ -190,3 +198,5 @@ body {
     background-color: #0056b3;
 }
 
+=======
+>>>>>>> 7718f8a4823d1d1f5df674375a0fa28d5657be66
