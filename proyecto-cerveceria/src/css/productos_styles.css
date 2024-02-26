@@ -14,6 +14,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  
 }
 .producto h5{
     margin-top: 20px;
@@ -116,6 +117,8 @@
 
 
 
+
+
 .form-group {
     margin-bottom: 15px;
 }
@@ -155,4 +158,79 @@
 }
 .form-group button:hover {
     background-color: #0056b3;
+}
+
+
+/*-----------------------------*/
+#contenedorProductos{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 18px;
+}
+.contenedor_producto{
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+    border-radius: 15px;
+    border: 2px black solid;
+    width: 400px;
+    height: 575px;
+}
+.botonProducto{
+    display: flex;
+    justify-content: center;
+
+}
+.img{
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+.detalles_producto{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+.nombre_producto, .precio_producto{
+color: white;
+}
+.precio_producto{
+    margin-top: 3px;
+}
+.botones{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffe907;
+    width: 70px;
+    height: 25px;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+.boton_cantidad{
+    width: 100%;
+    background-color: #eab301 ;
+    border: none;
+    font-weight: 700;
+}
+.boton_suma{
+    border-radius: 0 15px 15px 0;
+}
+.boton_resta{
+    border-radius: 15px 0 0 15px;
+}
+.numero_cantidad{
+    color: black;
+    width: 100%;
+    text-align: center;
+}
+
+.detalles_producto>button{
+    background-color: #64635f;
+    border-radius: 15px;
+    border: none;
+    width: 340px;
+    height: 25px;
+    color: white;
+    font-weight: 750;
+    margin-top: 18px;
 }

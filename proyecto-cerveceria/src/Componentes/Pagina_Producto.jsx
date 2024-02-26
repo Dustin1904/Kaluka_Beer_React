@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import producto1 from '../Imagenes/Producto1.png';
-import producto2 from '../Imagenes/Producto2.png';
-import producto3 from '../Imagenes/producto3.jpg';
+import React, { useState} from 'react';
+import producto1 from '../Imagenes/Producto_Lata1.jpg';
+import producto2 from '../Imagenes/Producto_Lata2.jpg';
+import producto3 from '../Imagenes/Producto_Botella1.jpg';
 
 import '../css/productos_styles.css'
-
+import Cervezas from './Componente_Prodcutos';
 const data = {
     3: {
         id: 3,
@@ -38,61 +38,50 @@ const Productos = () => {
     const [mostrarDetalle, setMostrarDetalle] = useState(false);
     const [productoSeleccionado, setProductoSeleccionado] = useState(null);
 
-    useEffect(() => {
-        cambiarImagen();
-    }, []);
+    // useEffect(() => {
+    //     cambiarImagen();
+    // }, []);
 
     const obtenerProducto = (productoId) => {
         setMostrarDetalle(true);
         setProductoSeleccionado(data[productoId]);
     };
 
-    const cambiarImagen = () => {
-        Object.values(data).map((producto) => {
-            // let imagen = document.getElementById(`imagen${producto.id}`);
-            // imagen.addEventListener("mouseenter", () => {
-            //     imagen.src = `${producto.url2}`;
-            // });
-            // imagen.addEventListener("mouseleave", () => {
-            //     imagen.src = `${producto.url1}`;
-            // });
-            // return () => {
-            //     imagen.removeEventListener("mouseenter", () => {
-            //         imagen.src = `${producto.url2}`;
-            //     });
-            //     imagen.removeEventListener("mouseleave", () => {
-            //         imagen.src = `${producto.url1}`;
-            //     });
-            // };
-        });
-    };
+    // const cambiarImagen = () => {
+    //     Object.values(data).map((producto) => {
+    //         // let imagen = document.getElementById(`imagen${producto.id}`);
+    //         // imagen.addEventListener("mouseenter", () => {
+    //         //     imagen.src = `${producto.url2}`;
+    //         // });
+    //         // imagen.addEventListener("mouseleave", () => {
+    //         //     imagen.src = `${producto.url1}`;
+    //         // });
+    //         // return () => {
+    //         //     imagen.removeEventListener("mouseenter", () => {
+    //         //         imagen.src = `${producto.url2}`;
+    //         //     });
+    //         //     imagen.removeEventListener("mouseleave", () => {
+    //         //         imagen.src = `${producto.url1}`;
+    //         //     });
+    //         // };
+    //     });
+    // };
 
     return (
         <div className='cotenedorGeneral'>
             {!mostrarDetalle ? (
                 <div id="contenedorProductos">
                     {Object.values(data).map((producto) => (
-                        <button
+                        <article className='contenedor_producto'>
+                            <button
                             key={producto.id}
                             className="botonProducto"
                             onClick={() => obtenerProducto(producto.id)}
-                        >
-                            <div className="producto">
-                                <img
-                                    className="transicion"
-                                    id={`imagen${producto.id}`}
-                                    src={producto.url1}
-                                    alt=""
-                                />
-                                <div>
-                                    <h5>{producto.titulo}</h5>
-                                    <div>
-                                        <span className="tachado">{producto.precioNormal}</span>
-                                        <span className="precio">{producto.precioOferta}</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </button>
+                            >
+                            <img className='img' src={producto.url1} alt={producto.titulo} />
+                            </button>
+                        <Cervezas  nombre_producto={producto.titulo} precio={producto.precioNormal} />
+                        </article>
                     ))}
                 </div>
             ) : (
@@ -114,16 +103,15 @@ const Productos = () => {
                             <p>Producto
                             </p>
                             <div>
-                                <button> + </button>
-                                <span> </span>
                                 <button> - </button>
+                                <span> </span>
+                                <button> + </button>
                                 <div>
                                     <button onClick={() => setMostrarDetalle(false)}>Volver</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
                 </div>
             )}
         </div>
