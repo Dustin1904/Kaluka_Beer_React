@@ -210,16 +210,13 @@ body{
   margin-right: 50px;
   letter-spacing: -1px;
   font-family: "Kanit", sans-serif;
-
   font-weight: 500;
   transition: transform 0.5s ease;
 } 
 .navegacion a:hover{
   transform: scale(2.5);
 }
-.navegacion a:hover{
-  transform: scale(1.1);
-}
+
 .navegacion li:last-child a{
   margin-right: 0;
 }
@@ -232,10 +229,7 @@ body{
 .Contenido_Pagina{
   background-color: bisque;
 }
-.imagen_fondo_Pprincipal{
-  max-width: 100%;
-  width: auto;
-}
+
 
 /*||| MEDIA PARA EL MENU DE OPCIONES |||*/
 @media (max-width: 800px) {

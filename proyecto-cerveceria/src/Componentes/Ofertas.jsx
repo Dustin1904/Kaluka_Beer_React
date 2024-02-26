@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import producto1 from '../Imagenes/producto1.jpg';
+import producto1 from '../Imagenes/Producto1.png';
+import producto2 from '../Imagenes/Producto2.png';
+import producto3 from '../Imagenes/producto3.jpg';
 import '../css/productos_styles.css'
 
 const data = {
@@ -7,7 +9,7 @@ const data = {
         id: 3,
         titulo: 'Rubia',
         precioNormal: '$10,53',
-        url1: producto1,
+        url1: producto3,
         url2: '../rss/1espaldablanca.webp',
         precioOferta: '$8,37'
     },
@@ -15,7 +17,7 @@ const data = {
         id: 2,
         titulo: 'Maracuya',
         precioNormal: '$7,34',
-        url1: producto1,
+        url1: producto2,
         url2: '../rss/2 pantalonetanegrafront.webp',
         precioOferta: '$6,14'
     },

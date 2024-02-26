@@ -1,35 +1,38 @@
 import React, { useState, useEffect } from 'react';
+import producto1 from '../Imagenes/Producto1.png';
+import producto2 from '../Imagenes/Producto2.png';
 import producto3 from '../Imagenes/producto3.jpg';
-import imagenFondo from '../Imagenes/FondoBlanco.jpg';
 
 import '../css/productos_styles.css'
 
 const data = {
     3: {
         id: 3,
-        titulo: 'Hs camiseta Once Caldas Oficial Pro Elites - Patrocinadores',
-        precioNormal: '$60,53',
+        titulo: 'Rubia',
+        precioNormal: '$3,50',
         url1: producto3,
         url2: '../rss/2 pantalonetanegrafront.webp',
-        precioOferta: '$42,37'
+        precioOferta: '$3'
     },
     2: {
         id: 2,
-        titulo: 'Hs Uniforme Visitante Deportivo Cali ACADEMIA',
-        precioNormal: '$37,34',
-        url1: producto3,
+        titulo: 'Maracuya',
+        precioNormal: '$4',
+        url1: producto2,
         url2: '../rss/2 pantalonetanegrafront.webp',
-        precioOferta: '$26,14'
+        precioOferta: '$3,50'
     },
     1: {
         id: 1,
-        titulo: 'Hs Uniforme Deportivo Cali ACADEMIA',
-        precioNormal: '$37,34',
-        url1: producto3,
+        titulo: 'Negra',
+        precioNormal: '$3,50',
+        url1: producto1,
         url2: '../rss/3 PANTALONETAFRONT.webp',
-        precioOferta: '$26,14'
+        precioOferta: '$2,50'
     },
 };
+
+
 
 const Productos = () => {
     const [mostrarDetalle, setMostrarDetalle] = useState(false);
@@ -68,7 +71,6 @@ const Productos = () => {
         <div className='cotenedorGeneral'>
             {!mostrarDetalle ? (
                 <div id="contenedorProductos">
-                    
                     {Object.values(data).map((producto) => (
                         <button
                             key={producto.id}
@@ -80,7 +82,7 @@ const Productos = () => {
                                     className="transicion"
                                     id={`imagen${producto.id}`}
                                     src={producto.url1}
-                                    alt="camisa"
+                                    alt=""
                                 />
                                 <div>
                                     <h5>{producto.titulo}</h5>
@@ -100,32 +102,28 @@ const Productos = () => {
                             id={`imagen${productoSeleccionado.id}`}
                             className="imagenProducto"
                             src={productoSeleccionado.url1}
-                            alt="camisa"
+                            alt=""
                         />
                     </div>
                     <div className="columna">
                         <h1>{productoSeleccionado.titulo}</h1>
-                        <span>-</span>
-                        <h1>Patrocinadores</h1>
-                        <span style={{ marginTop: '30px', marginBottom: '20px' }}>45646</span>
+                        
                         <div className="datosProducto">
                             <span className="tachado">{productoSeleccionado.precioNormal}</span>
                             <span>{productoSeleccionado.precioOferta}<span className="oferta">Oferta</span></span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum harum, cumque, reprehenderit vero aspernatur iure debitis maiores odit pariatur voluptatibus optio. Cumque distinctio enim delectus id, illo blanditiis eos vitae.</p>
+                            <p>Producto
+                            </p>
                             <div>
-                                <p>Talla</p>
-                                <div className="tallas">
-                                    <button>S</button>
-                                    <button>M</button>
-                                    <button>L</button>
-                                    <button>XL</button>
-                                    <button>XXL</button>
-                                    <button>XXXL</button>
+                                <button> + </button>
+                                <span> </span>
+                                <button> - </button>
+                                <div>
+                                    <button onClick={() => setMostrarDetalle(false)}>Volver</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <button onClick={() => setMostrarDetalle(false)}>Volver</button>
+                    
                 </div>
             )}
         </div>
