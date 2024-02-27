@@ -1,6 +1,6 @@
 import React from "react";
 
-function P_SNosotros(){
+function PSNosotros(){
     return(
       <div className="contenedor_sobre_nosotros">
         <h1> KALUKA <span>BEER</span></h1>
@@ -8,4 +8,4 @@ function P_SNosotros(){
       </div>
     );
 }
-export default P_SNosotros;
+export default PSNosotros;

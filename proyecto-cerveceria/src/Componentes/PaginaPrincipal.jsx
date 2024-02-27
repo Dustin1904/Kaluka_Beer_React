@@ -1,6 +1,6 @@
 import React from "react";
 
-function P_Principal(){
+function PPrincipal(){
     return(
       <div className="contenido_pagina">
         <img className="imagen_fondo_Pprincipal" src={require('../Imagenes/ImagenPP.png')} alt="xd"/>
@@ -8,4 +8,4 @@ function P_Principal(){
     );
 }
 
-export default P_Principal;
+export default PPrincipal;

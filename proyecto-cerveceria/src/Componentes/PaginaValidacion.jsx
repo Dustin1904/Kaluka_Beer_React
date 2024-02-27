@@ -2,13 +2,14 @@ import React, { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { BrowserRouter } from 'react-router-dom';
 import Encabezado from './Encabezado';
-import P_Principal from './Pagina_Principal';
-import P_SNosotros from './Pagina_SNosotros';
-import Productos from './Pagina_Producto';
+import Productos from './PaginaProducto';
 import Ofertas from './Ofertas';
+import Iniciosesion from './Login';
+import PPrincipal from './PaginaPrincipal';
+import PSNosotros from './PaginaSNosotros';
 
 
-function P_Validacion(){
+function PValidacion(){
   const [redigir, setRedirigir] = useState(false);
   const manejarEnvio=()=>{
     setRedirigir(true);
@@ -20,10 +21,11 @@ function P_Validacion(){
           <Encabezado />
         </div>
         <Routes>
-          <Route path='/Pagina_Principal' element={<P_Principal />} />
-          <Route path='/Pagina_Producto' element={<Productos/>} />
+          <Route path='/PaginaPrincipal' element={<PPrincipal />} />
+          <Route path='/PaginaProducto' element={<Productos/>} />
           <Route path='/Ofertas' element={<Ofertas />} />
-          <Route path='/Pagina_SNosotros' element={<P_SNosotros />} />
+          <Route path='/PaginaSNosotros' element={<PSNosotros />} />
+          <Route path='/Login' element={<Iniciosesion />} />
         </Routes>
       </BrowserRouter>
     )
@@ -76,4 +78,4 @@ function P_Validacion(){
       
   ); 
 }
-export default P_Validacion;
+export default PValidacion;
