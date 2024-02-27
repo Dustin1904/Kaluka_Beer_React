@@ -223,6 +223,10 @@ body{
 .navegacion li{
   text-align: center;
 }
+.imagen_fondo_Pprincipal{
+  width: 100%;
+  height: 100vh;
+}
 /*|||=== FIN CONTENEDOR "Contenedor_Acciones_Menu===|||"*/
 
 /*||| CONTENEDOR "Contenido_Pagina |||"*/

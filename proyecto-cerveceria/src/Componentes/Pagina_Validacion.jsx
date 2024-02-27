@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { Route, Router, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import { BrowserRouter } from 'react-router-dom';
 import Encabezado from './Encabezado';
 import P_Principal from './Pagina_Principal';
 import P_SNosotros from './Pagina_SNosotros';
 import Productos from './Pagina_Producto';
-import P_Ofertas from './Ofertas';
+import Ofertas from './Ofertas';
 
 
 function P_Validacion(){
@@ -22,7 +22,7 @@ function P_Validacion(){
         <Routes>
           <Route path='/Pagina_Principal' element={<P_Principal />} />
           <Route path='/Pagina_Producto' element={<Productos/>} />
-          <Route path='/Pagina_Ofertas' element={<P_Ofertas />} />
+          <Route path='/Ofertas' element={<Ofertas />} />
           <Route path='/Pagina_SNosotros' element={<P_SNosotros />} />
         </Routes>
       </BrowserRouter>
@@ -49,7 +49,7 @@ function P_Validacion(){
 
       <div className='Pie_Pagina_Validacion'>
         <div className='imagen1_pie_pagina'>
-          <img className='imagen1_logo' src={require('../Imagenes/Kaluka_Beer_3.jpg')} />
+          <img className='imagen1_logo' src={require('../Imagenes/Kaluka_Beer_3.jpg')} alt='xd' />
         </div>
 
         <div className="texto1_pie_pagina">
@@ -65,10 +65,10 @@ function P_Validacion(){
         </div>
 
         <div class="imagen2_tiktok_pie_pagina">
-          <img className="imagen2_tiktok" src={require('../Imagenes/Tiktok_logo.png')} />
+          <img className="imagen2_tiktok" src={require('../Imagenes/Tiktok_logo.png')} alt='xd'/>
         </div>
         <div className="imagen3_instagram_pie_pagina">
-          <img className="imagen3_instagram" src={require('../Imagenes/Instagram_logo.png')} />
+          <img className="imagen3_instagram" src={require('../Imagenes/Instagram_logo.png')} alt='xd'/>
         </div>
       </div>
 

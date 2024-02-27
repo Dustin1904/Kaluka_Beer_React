@@ -1,128 +1,119 @@
-import React, { useState, useEffect } from 'react';
-import producto1 from '../Imagenes/Producto1.png';
-import producto2 from '../Imagenes/Producto2.png';
-import producto3 from '../Imagenes/producto3.jpg';
-import '../css/productos_styles.css'
+import React, { useState} from 'react';
+import producto1 from '../Imagenes/Producto_Botella4.jpg';
+import producto2 from '../Imagenes/Producto_Botella3.jpg';
+import producto3 from '../Imagenes/Producto_Botella2.jpg';
 
+import '../css/productos_styles.css'
+import Cervezas from './Componente_Prodcutos';
+import Descripcion from './Componente_Descripcion';
 const data = {
     3: {
         id: 3,
         titulo: 'Rubia',
-        precioNormal: '$10,53',
+        precioNormal: '$3,50',
         url1: producto3,
-        url2: '../rss/1espaldablanca.webp',
-        precioOferta: '$8,37'
+        url2: '../rss/2 pantalonetanegrafront.webp',
+        precioOferta: '$3'
     },
     2: {
         id: 2,
         titulo: 'Maracuya',
-        precioNormal: '$7,34',
+        precioNormal: '$4',
         url1: producto2,
         url2: '../rss/2 pantalonetanegrafront.webp',
-        precioOferta: '$6,14'
+        precioOferta: '$3,50'
     },
     1: {
         id: 1,
         titulo: 'Negra',
-        precioNormal: '$7,34',
+        precioNormal: '$3,50',
         url1: producto1,
         url2: '../rss/3 PANTALONETAFRONT.webp',
-        precioOferta: '$6,14'
+        precioOferta: '$2,50'
     },
 };
+
+
 
 const Ofertas = () => {
     const [mostrarDetalle, setMostrarDetalle] = useState(false);
     const [productoSeleccionado, setProductoSeleccionado] = useState(null);
 
-    useEffect(() => {
-        cambiarImagen();
-    }, []);
+    // useEffect(() => {
+    //     cambiarImagen();
+    // }, []);
 
     const obtenerProducto = (productoId) => {
         setMostrarDetalle(true);
         setProductoSeleccionado(data[productoId]);
     };
 
-    const cambiarImagen = () => {
-        Object.values(data).map((producto) => {
-            let imagen = document.getElementById(`imagen${producto.id}`);
-            imagen.addEventListener("mouseenter", () => {
-                imagen.src = `${producto.url2}`;
-            });
-            imagen.addEventListener("mouseleave", () => {
-                imagen.src = `${producto.url1}`;
-            });
-            return () => {
-                imagen.removeEventListener("mouseenter", () => {
-                    imagen.src = `${producto.url2}`;
-                });
-                imagen.removeEventListener("mouseleave", () => {
-                    imagen.src = `${producto.url1}`;
-                });
-            };
-        });
-    };
+    // const cambiarImagen = () => {
+    //     Object.values(data).map((producto) => {
+    //         // let imagen = document.getElementById(`imagen${producto.id}`);
+    //         // imagen.addEventListener("mouseenter", () => {
+    //         //     imagen.src = `${producto.url2}`;
+    //         // });
+    //         // imagen.addEventListener("mouseleave", () => {
+    //         //     imagen.src = `${producto.url1}`;
+    //         // });
+    //         // return () => {
+    //         //     imagen.removeEventListener("mouseenter", () => {
+    //         //         imagen.src = `${producto.url2}`;
+    //         //     });
+    //         //     imagen.removeEventListener("mouseleave", () => {
+    //         //         imagen.src = `${producto.url1}`;
+    //         //     });
+    //         // };
+    //     });
+    // };
 
     return (
-        <div>
+        <div className='cotenedorGeneral'>
             {!mostrarDetalle ? (
                 <div id="contenedorProductos">
                     {Object.values(data).map((producto) => (
-                        <button
+                        <article className='contenedor_producto'>
+                            <button
                             key={producto.id}
                             className="botonProducto"
                             onClick={() => obtenerProducto(producto.id)}
-                        >
-                            <div className="producto">
-                                <img
-                                    className="transicion"
-                                    id={`imagen${producto.id}`}
-                                    src={producto.url1}
-                                    alt="camisa"
-                                />
-                                <div>
-                                    <h5 className="tituloProducto">{producto.titulo}</h5>
-                                    <div>
-                                        <span className="tachadoO">{producto.precioNormal}</span>
-                                        <span className="precio">{producto.precioOferta}</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </button>
+                            >
+                            <img className='img' src={producto.url1} alt={producto.titulo} />
+                            </button>
+                            <Cervezas  nombre_producto={producto.titulo} precio={producto.precioNormal} />
+                        </article>
                     ))}
                 </div>
             ) : (
                 <div id="contenedorUnico">
-                    <div className="columna1">
-                        <img
-                            id={`imagen${productoSeleccionado.id}`}
-                            className="imagenProducto"
-                            src={productoSeleccionado.url1}
-                            alt="camisa"
-                        />
-                    </div>
-                    <div className="columna">
-                        <h1 className='tituloProducto'>{productoSeleccionado.titulo}</h1>
-                        {/* <span>-</span>
-                        <h1>Patrocinadores</h1> */}
-                        <div className="datosProducto">
-                            <span className="tachadoO">{productoSeleccionado.precioNormal}</span>
-                            <span >{productoSeleccionado.precioOferta}<span className="oferta">Oferta</span></span>
-                            <p className='descripcionProducto'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum harum, cumque, reprehenderit vero aspernatur iure debitis maiores odit pariatur voluptatibus optio. Cumque distinctio enim delectus id, illo blanditiis eos vitae.</p>
-                            <div>
-                                <p className='textoTamaño'>Tamaños</p>
-                                <div className="tamaños">
-                                    <button>150ml</button>
-                                    <button>200ml</button>
-                                    <button>300ml</button>
-                                    <button>450ml</button>
-                                    <button>800ml</button>
+                    <article className='caja'>
+                        <div className="columna1">
+                            <img
+                                id={`imagen${productoSeleccionado.id}`}
+                                className="imagenProducto"
+                                src={productoSeleccionado.url1}
+                                alt=""
+                            />
+                        </div>
+                        <div className="columna">
+                            <h1>{productoSeleccionado.titulo}</h1>
+                            
+                            <div className="datosProducto">
+                                <span className="tachado">{productoSeleccionado.precioNormal}</span>
+                                <span>{productoSeleccionado.precioOferta}<span className="oferta">Oferta</span></span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sed tempore unde molestiae quae, laudantium tenetur sapiente sequi quas ipsa reiciendis iste provident atque. Laboriosam placeat dicta nobis perspiciatis soluta.
+                                </p>
+                                <div>
+                                    <Descripcion />
+                                    <div>
+                                        <button className='regresar' onClick={() => setMostrarDetalle(false)}>Volver</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <button className='botonVolver' onClick={() => setMostrarDetalle(false)}>Volver</button>
+                    </article>
+                    
                 </div>
             )}
         </div>

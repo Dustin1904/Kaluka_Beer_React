@@ -5,6 +5,7 @@ import producto3 from '../Imagenes/Producto_Botella1.jpg';
 
 import '../css/productos_styles.css'
 import Cervezas from './Componente_Prodcutos';
+import Descripcion from './Componente_Descripcion';
 const data = {
     3: {
         id: 3,
@@ -80,38 +81,39 @@ const Productos = () => {
                             >
                             <img className='img' src={producto.url1} alt={producto.titulo} />
                             </button>
-                        <Cervezas  nombre_producto={producto.titulo} precio={producto.precioNormal} />
+                            <Cervezas  nombre_producto={producto.titulo} precio={producto.precioNormal} />
                         </article>
                     ))}
                 </div>
             ) : (
                 <div id="contenedorUnico">
-                    <div className="columna1">
-                        <img
-                            id={`imagen${productoSeleccionado.id}`}
-                            className="imagenProducto"
-                            src={productoSeleccionado.url1}
-                            alt=""
-                        />
-                    </div>
-                    <div className="columna">
-                        <h1>{productoSeleccionado.titulo}</h1>
-                        
-                        <div className="datosProducto">
-                            <span className="tachado">{productoSeleccionado.precioNormal}</span>
-                            <span>{productoSeleccionado.precioOferta}<span className="oferta">Oferta</span></span>
-                            <p>Producto
-                            </p>
-                            <div>
-                                <button> - </button>
-                                <span> </span>
-                                <button> + </button>
+                    <article className='caja'>
+                        <div className="columna1">
+                            <img
+                                id={`imagen${productoSeleccionado.id}`}
+                                className="imagenProducto"
+                                src={productoSeleccionado.url1}
+                                alt=""
+                            />
+                        </div>
+                        <div className="columna">
+                            <h1>{productoSeleccionado.titulo}</h1>
+                            
+                            <div className="datosProducto">
+                                <span className="tachado">{productoSeleccionado.precioNormal}</span>
+                                <span>{productoSeleccionado.precioOferta}<span className="oferta">Oferta</span></span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sed tempore unde molestiae quae, laudantium tenetur sapiente sequi quas ipsa reiciendis iste provident atque. Laboriosam placeat dicta nobis perspiciatis soluta.
+                                </p>
                                 <div>
-                                    <button onClick={() => setMostrarDetalle(false)}>Volver</button>
+                                    <Descripcion />
+                                    <div>
+                                        <button className='regresar' onClick={() => setMostrarDetalle(false)}>Volver</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </article>
+                    
                 </div>
             )}
         </div>
