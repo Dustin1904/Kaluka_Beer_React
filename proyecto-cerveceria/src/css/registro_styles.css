@@ -1,0 +1,41 @@
+
+.formulario2{
+    display: flex;
+    flex-direction: column;
+    background-color: azure;
+    max-width: 80%;
+    width: 70%;
+    background-image: url("../Imagenes/Fondo_Login.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    border-radius: 20px;
+}
+.formulario2 h2{
+    margin-left: 15%;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+}
+.formulario2 input, .formulario2 label{
+    max-width: 100%;
+    width: 30%;
+    margin-left: 5%;
+    color: white;
+    margin-top: 1%;
+    border-radius: 20px;
+}
+.formulario2 input{
+    color: black;
+    font-size: 100%;
+    padding: 0 10px;
+}
+.confirmar{
+    max-width: 100%;
+    width: 15%;
+    margin-left: 15%;
+    margin-top: 2%;
+    border: none;
+    border-radius: 20px;
+    font-size: 125%;
+}

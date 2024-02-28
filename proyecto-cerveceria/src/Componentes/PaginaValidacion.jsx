@@ -7,6 +7,7 @@ import Ofertas from './Ofertas';
 import Iniciosesion from './Login';
 import PPrincipal from './PaginaPrincipal';
 import PSNosotros from './PaginaSNosotros';
+import Registro from './Registro';
 
 
 function PValidacion(){
@@ -26,6 +27,7 @@ function PValidacion(){
           <Route path='/Ofertas' element={<Ofertas />} />
           <Route path='/PaginaSNosotros' element={<PSNosotros />} />
           <Route path='/Login' element={<Iniciosesion />} />
+          <Route path='/Registro' element={<Registro />} />
         </Routes>
       </BrowserRouter>
     )
@@ -39,7 +41,7 @@ function PValidacion(){
 
       <div className="Contenedor_Acciones"> 
         <div className='fecha_nacimiento'>
-          <form onSubmit={manejarEnvio} target='_self'>
+          <form className='form_PValidacion' onSubmit={manejarEnvio} target='_self'>
             <input className="dia" type="number" id="dia" min="1" max="31" placeholder="Día" required></input>
             <input className="mes" type="number" id="mes" min="1" max="12" placeholder="Mes" required></input>
             <input className="año" type="number" id="año" min="1950" max="2024" placeholder="Año" required></input>

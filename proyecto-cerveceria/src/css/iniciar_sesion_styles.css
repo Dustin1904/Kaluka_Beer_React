@@ -28,23 +28,12 @@
     font-family: 'Kanit', sans-serif;
     font-size: 250%;
 }
-.contenedor_formulario{
-    background-color: antiquewhite;
-    display: flex;
-    place-content: center;
-    flex-direction: column;
-    max-width: 80%;
-    width: 50%;
-    justify-content: center;
-    align-items: center;
-}
-.formulario label, input{
+.formulario label,.formulario input{
     display: flex;
     max-width: 100%;
     width: 30%;
     margin-left: 5%;
     margin-top: 2%;
-    
     border-radius: 20px;
 }
 .formulario label{
@@ -58,7 +47,7 @@
     background-color: white;
 }
 
-.ingresar{
+.ingresar_login{
     display: flex;
     max-width: 100%;
     width: 15% ;
