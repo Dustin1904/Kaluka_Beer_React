@@ -2,7 +2,7 @@
     margin: 0;
 }
 .cuerpo{
-    background-color: aqua;
+    background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     height: 70vh;
@@ -12,12 +12,21 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
     max-width: 80%;
     max-height: 100%;
     width: 70%;
-    
-    background-color: blueviolet;
+    border-radius: 20px;
+    background-image: url("../Imagenes/Fondo_Login.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.formulario h2{
+    margin-left: 17%;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    font-size: 250%;
 }
 .contenedor_formulario{
     background-color: antiquewhite;
@@ -29,4 +38,40 @@
     justify-content: center;
     align-items: center;
 }
+.formulario label, input{
+    display: flex;
+    max-width: 100%;
+    width: 30%;
+    margin-left: 5%;
+    margin-top: 2%;
+    
+    border-radius: 20px;
+}
+.formulario label{
+    color: white;
+    font-size: 150%;
+}
+.formulario input{
+    font-size: 100%;
+    border: none;
+    padding: 0 10px;
+    background-color: white;
+}
 
+.ingresar{
+    display: flex;
+    max-width: 100%;
+    width: 15% ;
+    justify-content: center;
+    margin-left: 12%;
+    margin-top: 2%;
+    border: none;
+    font-size: 150%;
+    border-radius: 20px;
+}
+.formulario p{
+    margin-top: 1%;
+    font-size: 110%;
+    color: white;
+    margin-left: 6.5%;
+}

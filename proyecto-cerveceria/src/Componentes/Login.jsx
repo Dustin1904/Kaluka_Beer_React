@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../css/iniciar_sesion_styles.css";
 
 export default function Iniciosesion(){
@@ -9,8 +10,8 @@ export default function Iniciosesion(){
                 <label htmlFor=""> Usuario </label>
                 <input type="text" />
                 <label htmlFor=""> Contraseña </label>
-                <input type="passord" />
-                <p> ¿ No tienes una cuenta ? <span>Resgistrate</span></p>
+                <input type="password" />
+                <p> ¿ No tienes una cuenta ? <Link to="/Resgitro"><span>Resgistrate</span></Link> </p>
                 <button className="ingresar"> Ingresar </button>
             </form>
             
