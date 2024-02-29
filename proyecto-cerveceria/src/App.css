@@ -239,10 +239,6 @@ body{
 /*|||=== FIN CONTENEDOR "Contenedor_Acciones_Menu===|||"*/
 
 /*||| CONTENEDOR "Contenido_Pagina |||"*/
-.Contenido_Pagina{
-  background-color: bisque;
-}
-
 
 /*||| MEDIA PARA EL MENU DE OPCIONES |||*/
 @media (max-width: 800px) {

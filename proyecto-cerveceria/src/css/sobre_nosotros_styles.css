@@ -1,77 +1,69 @@
-*{
-    margin: 0;
-}
-/* ||||||||||||||  MENU DE OPCIONES ||||||||||||||||||||||*/
-/*||||||||||||||||||||||||||||||||||||||||||||||||||||*/
-
-/*||| CONTENEDOR "Contenedor_Acciones_Menu" |||*/
-
-body{
-    background-color: black;
-}
-
-.Contenido_Pagina{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
+.Pagina_Sobre_Nosotros{
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   background-color: rgb(0, 0, 0);
 
 
-.tituloempresa{
-    text-align: center;;
-    font-family:'Dancing Script';
 }
-.titulokaluka{
-    color:#F0D513;
-}
-.titulobeer{
-    color:#FFA600;  
-    margin-left: 20px;
-}
-.contenedor_tiempo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top:  5%;
-    
+.fundadores{
+    max-width: 100%;
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
 }
 .contenedor_historia{
     display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(0, 0, 0);
+    max-width: 100%;
+    width: 100%;
+    max-height: 100%;
+    height: fit-content;
+    justify-content: space-evenly;
+    margin-top: 3%;
+}
+.Pagina_Sobre_Nosotros h1{
+    text-align: center;
+    margin-top: 2%;
+    color: #ffe907;
+    font-family: 'Dancing Script';
+    letter-spacing: 10px;
+}
+.Pagina_Sobre_Nosotros span{
+    color: #ff8a00;
+    font-family: 'Dancing Script';
+}
+.contenedor{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    width: 20%;    
-}
-
-.imagenFundadores{
-    display: flex;
-    justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    max-width: 100%;
+    width: 25%;
+    text-align: center;
+    border-radius: 20px;
 }
-
-.imagenFundadores img{  
-    height: 100%;
-    width: 70%;
-    padding: 0 0 30px 0;
-}
-
-.contenedor_textoEmpresa{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
+.texto_historia{
+    margin-top: 1%;
+    font-size: large;
+    margin-bottom: 5%;
+    font-family: 'Kanit',sans-serif;
     color: white;
 }
-.anioHistoria{
-    color:#FFA600;
-    padding: 0 0 15px;
-    font-size: 30px;
-}
-.textoEmpresa{
-    width: 70%;
-    font-size: 16px;
-    margin-bottom: 20px;
-}
+/* @media (max-width: 900px) {
+    .Pagina_Sobre_Nosotros{
+        flex-direction: column;
+        align-items: normal;
+    }
+    .contenedor_historia{
+        display: flex;
+        flex-direction: column;
+    }
+    .contenedor{
+        flex-direction: column;
+    }
+} */
+
